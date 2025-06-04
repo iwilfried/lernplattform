@@ -1,7 +1,7 @@
 {
-  "name": "Lernplattform - Mobile Lernen",
-  "short_name": "Lernplattform",
-  "description": "Ihre persönliche Lernreise - Schritt für Schritt zum Erfolg. Lernen Sie überall und jederzeit.",
+  "name": "Learn2Go Datenbank Dokumentation",
+  "short_name": "Learn2Go Docs",
+  "description": "Komplette Dokumentation der Learn2Go Datenbank und API. Entwicklerfreundliche Referenz für alle Features.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -34,7 +34,7 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["education", "productivity", "lifestyle"],
+  "categories": ["education", "productivity", "developer"],
   "lang": "de",
   "dir": "ltr",
   "display_override": ["window-controls-overlay", "standalone"],
@@ -54,23 +54,23 @@
   ],
   "shortcuts": [
     {
-      "name": "Kurse",
-      "short_name": "Kurse",
-      "description": "Alle verfügbaren Kurse anzeigen",
+      "name": "Dokumentation",
+      "short_name": "Docs",
+      "description": "API und Datenbank Dokumentation",
       "url": "/kurse",
       "icons": [{ "src": "/img/logo.svg", "sizes": "192x192" }]
     },
     {
-      "name": "Quiz",
-      "short_name": "Quiz",
-      "description": "Wissen testen",
-      "url": "/kurse/grundlagen/kapitel-1/quiz-1",
+      "name": "API Reference",
+      "short_name": "API",
+      "description": "API Referenz anzeigen",
+      "url": "/api",
       "icons": [{ "src": "/img/logo.svg", "sizes": "192x192" }]
     }
   ],
   "protocol_handlers": [
     {
-      "protocol": "web+lernplattform",
+      "protocol": "web+learn2go",
       "url": "/kurse?deeplink=%s"
     }
   ]

@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Lernplattform',
-  tagline: 'Lernen Sie Schritt für Schritt - Ihre persönliche Lernreise',
+  title: 'Learn2Go Datenbank Dokumentation',
+  tagline: 'Komplette Dokumentation der Learn2Go Datenbank und API',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -118,9 +118,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/lernplattform-social-card.jpg',
     navbar: {
-      title: 'Lernplattform',
+      title: 'Learn2Go',
       logo: {
-        alt: 'Lernplattform Logo',
+        alt: 'Learn2Go Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -128,16 +128,16 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'kursSidebar',
           position: 'left',
-          label: 'Kurse',
+          label: 'Dokumentation',
         },
         {
-          to: '/fortschritt',
-          label: 'Mein Fortschritt',
+          to: '/api',
+          label: 'API Reference',
           position: 'left',
         },
         {
-          to: '/zertifikate',
-          label: 'Zertifikate',
+          to: '/datenbank',
+          label: 'Datenbank Schema',
           position: 'left',
         },
       ],
@@ -146,46 +146,46 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Lernen',
+          title: 'Dokumentation',
           items: [
             {
-              label: 'Alle Kurse',
-              to: '/kurse',
+              label: 'Erste Schritte',
+              to: '/kurse/einfuehrung',
             },
             {
-              label: 'Mein Fortschritt',
-              to: '/fortschritt',
+              label: 'Datenbank Schema',
+              to: '/datenbank',
             },
           ],
         },
         {
-          title: 'Support',
+          title: 'API',
           items: [
             {
-              label: 'Hilfe',
-              to: '/hilfe',
+              label: 'API Reference',
+              to: '/api',
             },
             {
-              label: 'FAQ',
-              to: '/faq',
+              label: 'Authentifizierung',
+              to: '/auth',
             },
           ],
         },
         {
-          title: 'Mehr',
+          title: 'Community',
           items: [
             {
-              label: 'Über uns',
-              to: '/ueber-uns',
+              label: 'GitHub',
+              href: 'https://github.com/iwilfried/lernplattform',
             },
             {
-              label: 'Kontakt',
-              to: '/kontakt',
+              label: 'Feedback',
+              to: '/feedback',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Lernplattform. Erstellt mit Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Learn2Go. Erstellt mit Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
