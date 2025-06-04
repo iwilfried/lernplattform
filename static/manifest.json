@@ -1,0 +1,28 @@
+{
+  "name": "Lernplattform",
+  "short_name": "Lernplattform",
+  "description": "Ihre persönliche Lernreise - Schritt für Schritt zum Erfolg",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#25c2a0",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/img/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/logo-512.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "de",
+  "dir": "ltr"
+} 
