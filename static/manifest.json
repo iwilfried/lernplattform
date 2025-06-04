@@ -1,14 +1,26 @@
 {
-  "name": "Lernplattform",
+  "name": "Lernplattform - Mobile Lernen",
   "short_name": "Lernplattform",
-  "description": "Ihre persönliche Lernreise - Schritt für Schritt zum Erfolg",
+  "description": "Ihre persönliche Lernreise - Schritt für Schritt zum Erfolg. Lernen Sie überall und jederzeit.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "theme_color": "#25c2a0",
   "background_color": "#ffffff",
   "orientation": "portrait-primary",
+  "prefer_related_applications": false,
   "icons": [
+    {
+      "src": "/img/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
     {
       "src": "/img/logo-192.png",
       "sizes": "192x192",
@@ -22,7 +34,44 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["education", "productivity"],
+  "categories": ["education", "productivity", "lifestyle"],
   "lang": "de",
-  "dir": "ltr"
+  "dir": "ltr",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "screenshots": [
+    {
+      "src": "/img/screenshot-mobile.png",
+      "sizes": "640x1136",
+      "type": "image/png",
+      "platform": "narrow"
+    },
+    {
+      "src": "/img/screenshot-desktop.png", 
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Kurse",
+      "short_name": "Kurse",
+      "description": "Alle verfügbaren Kurse anzeigen",
+      "url": "/kurse",
+      "icons": [{ "src": "/img/logo.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Quiz",
+      "short_name": "Quiz",
+      "description": "Wissen testen",
+      "url": "/kurse/grundlagen/kapitel-1/quiz-1",
+      "icons": [{ "src": "/img/logo.svg", "sizes": "192x192" }]
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+lernplattform",
+      "url": "/kurse?deeplink=%s"
+    }
+  ]
 } 

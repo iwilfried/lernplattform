@@ -1,22 +1,116 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 3rem 1rem;
   width: 100%;
   background-color: var(--ifm-color-emphasis-100);
 }
 
+@media screen and (min-width: 997px) {
+  .features {
+    padding: 2rem 0;
+  }
+}
+
 .featureEmoji {
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@media screen and (min-width: 768px) {
+  .featureEmoji {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.features h2 {
+  font-size: 2.2rem !important;
+  margin-bottom: 1rem !important;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .features h2 {
+    font-size: 2rem !important;
+  }
 }
 
 .features h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .features h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
 }
 
 .features p {
   color: var(--ifm-color-emphasis-700);
   line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .features p {
+    font-size: 1rem;
+  }
+}
+
+.features .col {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: var(--ifm-background-color);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .features .col {
+    margin-bottom: 0;
+    padding: 1rem;
+    box-shadow: none;
+    background: transparent;
+  }
+}
+
+.features .col:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 768px) {
+  .features .col:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* Floating Animation für mobile Emojis */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Mobile-spezifische Anpassungen */
+@media screen and (max-width: 767px) {
+  .features .container {
+    padding: 0;
+  }
+  
+  .features .row {
+    margin: 0;
+  }
 } 

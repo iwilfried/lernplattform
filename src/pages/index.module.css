@@ -4,15 +4,20 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 2rem 1rem 3rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (min-width: 997px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 4rem 0;
+    min-height: 70vh;
   }
 }
 
@@ -21,59 +26,104 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.buttons .button {
+  min-height: 48px;
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons .button {
+    width: auto;
+    max-width: none;
+  }
 }
 
 .getStarted {
-  margin-left: 0.5rem;
+  margin-left: 0;
+  margin-top: 0;
 }
 
-/* Stats Section */
+/* Stats Section - Mobile optimiert */
 .statsSection {
-  padding: 3rem 0;
+  padding: 2rem 1rem;
   background-color: var(--ifm-color-emphasis-50);
+}
+
+@media screen and (min-width: 997px) {
+  .statsSection {
+    padding: 3rem 0;
+  }
 }
 
 .stat {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .stat h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
 .stat h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--ifm-color-primary);
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 .stat p {
   color: var(--ifm-color-emphasis-700);
   font-weight: 500;
+  font-size: 1rem;
 }
 
-/* Learning Path Section */
+/* Learning Path Section - Mobile optimiert */
 .learningPath {
-  padding: 4rem 0;
+  padding: 3rem 1rem;
+}
+
+@media screen and (min-width: 997px) {
+  .learningPath {
+    padding: 4rem 0;
+  }
 }
 
 .pathStep {
   text-align: center;
-  padding: 2rem 1rem;
-  height: 100%;
-  border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  height: auto;
+  border: 2px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   position: relative;
   background-color: var(--ifm-background-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.pathStep:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+.pathStep:hover,
+.pathStep:focus {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   border-color: var(--ifm-color-primary);
 }
 
@@ -81,50 +131,101 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  background-color: var(--ifm-color-primary);
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-dark));
   color: white;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(37, 194, 160, 0.3);
 }
 
 .pathStep h3 {
   margin-bottom: 1rem;
   color: var(--ifm-color-emphasis-800);
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .pathStep p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   color: var(--ifm-color-emphasis-600);
   line-height: 1.6;
+  font-size: 1rem;
 }
 
 .pathStep a {
   color: var(--ifm-color-primary);
   text-decoration: none;
-  font-weight: 500;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 2px solid var(--ifm-color-primary);
+  background: transparent;
+  transition: all 0.2s ease;
+  display: inline-block;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pathStep a:hover {
-  border-bottom-color: var(--ifm-color-primary);
+  background: var(--ifm-color-primary);
+  color: white;
+  transform: translateY(-2px);
 }
 
+/* Mobile-spezifische Hero-Anpassungen */
 @media screen and (max-width: 996px) {
-  .buttons {
-    flex-direction: column;
+  .heroBanner h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+    margin-bottom: 1rem;
   }
   
-  .getStarted {
-    margin-left: 0;
-    margin-top: 0.5rem;
-  }
-  
-  .pathStep {
+  .heroBanner .hero__subtitle {
+    font-size: 1.2rem !important;
+    line-height: 1.4;
     margin-bottom: 2rem;
+    padding: 0 1rem;
   }
+}
+
+/* Touch-optimierte Navigation */
+@media screen and (max-width: 996px) {
+  .pathStep {
+    margin-bottom: 1.5rem;
+  }
+  
+  .stat {
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+    padding-bottom: 2rem;
+  }
+  
+  .stat:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Verbesserte Tap-Targets für mobile Geräte */
+.pathStep a,
+.buttons .button {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+/* Smooth scrolling für mobile Navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading-Optimierung für mobile */
+.heroBanner,
+.statsSection,
+.learningPath {
+  will-change: transform;
 }
