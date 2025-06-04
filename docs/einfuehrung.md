@@ -4,7 +4,7 @@ title: Willkommen zur Lernplattform
 description: Ihre Reise zum Lernerfolg beginnt hier
 ---
 
-# 🎓 Willkommen zur Lernplattform
+# Willkommen zur Lernplattform
 
 Herzlich willkommen zu Ihrer persönlichen Lernreise! Diese Plattform wurde entwickelt, um Ihnen eine strukturierte und interaktive Lernerfahrung zu bieten.
 

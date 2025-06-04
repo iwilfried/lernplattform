@@ -40,6 +40,39 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: '🤖 Artificial Intelligence A-Z 2025',
+      collapsed: false,
+      items: [
+        {
+          type: 'category',
+          label: 'Willkommen zum Kurs',
+          items: [
+            'ai-module/willkommen/kurs-uebersicht',
+            'ai-module/willkommen/was-ist-ai',
+            'ai-module/willkommen/kurs-aufbau',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Agentic AI',
+          items: [
+            'ai-module/agentic-ai/einfuehrung-agents',
+            // Weitere Lektionen werden hinzugefügt, sobald sie erstellt sind
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Fundamentals of Reinforcement Learning',
+          items: [
+            'ai-module/reinforcement-learning/grundlagen-rl',
+            // Weitere Lektionen werden hinzugefügt, sobald sie erstellt sind
+          ],
+        },
+        // Machine Learning und NLP Module werden aktiviert, sobald Inhalte erstellt sind
+      ],
+    },
     // Weitere Kapitel werden hinzugefügt, sobald Inhalte verfügbar sind
   ],
 };
