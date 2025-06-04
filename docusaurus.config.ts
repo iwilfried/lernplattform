@@ -7,7 +7,6 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Learn2Go Datenbank Dokumentation',
   tagline: 'Komplette Dokumentation der Learn2Go Datenbank und API',
-  favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -119,10 +118,6 @@ const config: Config = {
     image: 'img/lernplattform-social-card.jpg',
     navbar: {
       title: 'Learn2Go',
-      logo: {
-        alt: 'Learn2Go Logo',
-        src: 'img/logo.svg',
-      },
       items: [
         {
           type: 'docSidebar',
