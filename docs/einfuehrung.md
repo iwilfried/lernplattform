@@ -4,57 +4,54 @@ title: Willkommen zur Lernplattform
 description: Ihre Reise zum Lernerfolg beginnt hier
 ---
 
-# Willkommen zur Lernplattform
+# 🚀 Künstliche Intelligenz von A-Z 2025
 
-Herzlich willkommen zu Ihrer persönlichen Lernreise! Diese Plattform wurde entwickelt, um Ihnen eine strukturierte und interaktive Lernerfahrung zu bieten.
+Willkommen zum **umfassendsten KI-Kurs 2025**! Von den Grundlagen bis zu praktischen Anwendungen lernen Sie alles, was Sie über moderne Künstliche Intelligenz wissen müssen.
 
-## 🚀 Was Sie erwartet
+## 🎯 Was Sie in diesem Kurs lernen
 
-Diese Lernplattform ist in verschiedene **Sections** (Bereiche) und **Lessons** (Lektionen) unterteilt, die Sie Schritt für Schritt durch den Lernstoff führen:
+- **🤖 Agentiv KI** - Intelligente Agents entwickeln und verstehen
+- **🧠 Reinforcement Learning** - Von Grundlagen bis Q-Learning
+- **💡 Praktische Anwendungen** - Eigene KI-Projekte umsetzen
+- **🔥 Hands-on Projekte** - ChatBots, Games und mehr
 
-### 📚 Grundlagen
-- **Kapitel 1: Erste Schritte** - Die fundamentalen Konzepte
-- **Kapitel 2: Vertiefung** - Aufbau auf den Grundlagen
+## 📚 Kursaufbau
 
-### 🚀 Fortgeschritten
-- **Kapitel 3: Erweiterte Konzepte** - Komplexere Themen
-- **Kapitel 4: Praxisprojekte** - Anwendung des Gelernten
+### 👋 Willkommen zum Kurs
+- Get the Course Materials
+- How to build the first AI chatbot?
+- Setup Environment
 
-### 🎯 Spezialisierung
-- **Kapitel 5: Spezialtechniken** - Fortgeschrittene Methoden
+### 🤖 Agentiv KI
+- Einführung in intelligente Agents
+- Multi-Agent Systems
+- Praktische Implementierung
 
-### 🏆 Abschluss
-- Zusammenfassung und Zertifizierung
+### 🧠 Fundamentals of Reinforcement Learning
+- Grundlagen des verstärkenden Lernens
+- Markov Decision Process
+- Policy Gradient Methods
 
-## ✨ Besondere Features
+### 🎯 Q-Learning Intuition
+- Q-Learning verstehen
+- Praktische Implementierung
+- Advanced Techniques
 
-- **📱 Mobile-freundlich**: Lernen Sie unterwegs mit unserer PWA-Unterstützung
-- **📊 Fortschrittsverfolgung**: Behalten Sie Ihren Lernfortschritt im Blick
-- **🎯 Interaktive Quizzes**: Testen Sie Ihr Wissen regelmäßig
-- **💼 Praxisprojekte**: Wenden Sie das Gelernte in realen Szenarien an
-- **🏅 Zertifikate**: Erhalten Sie Nachweise für Ihre Erfolge
+### 🔥 Praktische Projekte
+- KI-ChatBot Projekt
+- Reinforcement Learning Game
+- Abschlussprojekt
 
-## 🎯 Ihr Lernweg
+## ⚡ Schnellstart
 
-1. **Starten Sie mit den Grundlagen** - Jeder erfolgreiche Lernprozess beginnt mit soliden Fundamenten
-2. **Befolgen Sie die empfohlene Reihenfolge** - Die Lektionen bauen aufeinander auf
-3. **Nutzen Sie die Quizzes** - Überprüfen Sie regelmäßig Ihr Verständnis
-4. **Arbeiten Sie an den Projekten** - Praxis macht den Meister
-5. **Verfolgen Sie Ihren Fortschritt** - Bleiben Sie motiviert durch sichtbare Erfolge
+Beginnen Sie mit dem **Willkommen-Modul** um Ihre Entwicklungsumgebung einzurichten und Ihren ersten AI ChatBot zu erstellen!
 
-## 💡 Tipps für den Lernerfolg
+---
 
-:::tip Lerntipp
-Nehmen Sie sich regelmäßig Zeit zum Lernen - lieber 30 Minuten täglich als 5 Stunden einmal pro Woche!
-:::
-
-:::info Navigation
-Verwenden Sie die Seitenleiste links, um zwischen den verschiedenen Kapiteln und Lektionen zu navigieren.
-:::
-
-:::warning Wichtig
-Überspringen Sie keine Lektionen - jede baut auf der vorherigen auf!
-:::
+**Kursformat:** Interaktive Lektionen mit praktischen Übungen  
+**Niveau:** Beginner bis Advanced  
+**Geschätzte Dauer:** 8-12 Stunden  
+**Projekte:** 3 umfassende Hands-on Projekte
 
 ## 🚀 Bereit zum Start?
 

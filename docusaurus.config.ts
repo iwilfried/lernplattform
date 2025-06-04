@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Learn2Go Datenbank Dokumentation',
-  tagline: 'Komplette Dokumentation der Learn2Go Datenbank und API',
+  title: 'KI-Kurs 2025',
+  tagline: 'Künstliche Intelligenz von A-Z 2025 - Der umfassendste KI-Kurs',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -116,23 +116,23 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/lernplattform-social-card.jpg',
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
-      title: 'Learn2Go',
+      title: 'KI-Kurs 2025',
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'kursSidebar',
           position: 'left',
-          label: 'Dokumentation',
+          label: 'Kursmodule',
         },
         {
-          to: '/api',
-          label: 'API Reference',
-          position: 'left',
-        },
-        {
-          to: '/datenbank',
-          label: 'Datenbank Schema',
+          to: '/kurse/einfuehrung',
+          label: 'Kursübersicht',
           position: 'left',
         },
       ],
@@ -141,28 +141,28 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Dokumentation',
+          title: 'Kursmodule',
           items: [
             {
-              label: 'Erste Schritte',
+              label: 'Kursübersicht',
               to: '/kurse/einfuehrung',
             },
             {
-              label: 'Datenbank Schema',
-              to: '/datenbank',
+              label: 'Willkommen zum Kurs',
+              to: '/kurse/willkommen/course-materials',
             },
           ],
         },
         {
-          title: 'API',
+          title: 'KI-Themen',
           items: [
             {
-              label: 'API Reference',
-              to: '/api',
+              label: 'Agentiv KI',
+              to: '/kurse/agentiv-ki/einfuehrung',
             },
             {
-              label: 'Authentifizierung',
-              to: '/auth',
+              label: 'Reinforcement Learning',
+              to: '/kurse/reinforcement-learning/grundlagen',
             },
           ],
         },
@@ -173,14 +173,10 @@ const config: Config = {
               label: 'GitHub',
               href: 'https://github.com/iwilfried/lernplattform',
             },
-            {
-              label: 'Feedback',
-              to: '/feedback',
-            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Learn2Go. Erstellt mit Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} KI-Kurs 2025. Erstellt mit Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

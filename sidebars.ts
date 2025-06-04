@@ -15,65 +15,61 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   // Lernplattform Sidebar mit verfügbaren Kursen
   kursSidebar: [
-    'einfuehrung',
+    {
+      type: 'doc',
+      id: 'einfuehrung',
+      label: '🚀 Kursübersicht',
+    },
     {
       type: 'category',
-      label: '📚 Grundlagen',
+      label: '👋 Willkommen zum Kurs',
       collapsed: false,
       items: [
-        {
-          type: 'category',
-          label: 'Kapitel 1: Erste Schritte',
-          items: [
-            'grundlagen/kapitel-1/lektion-1',
-            'grundlagen/kapitel-1/lektion-2',
-            'grundlagen/kapitel-1/lektion-3',
-            'grundlagen/kapitel-1/quiz-1',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Kapitel 2: Vertiefung',
-          items: [
-            'grundlagen/kapitel-2/lektion-1',
-          ],
-        },
+        'willkommen/course-materials',
+        'willkommen/first-ai-chatbot',
+        'willkommen/setup-environment',
       ],
     },
     {
       type: 'category',
-      label: '🤖 Artificial Intelligence A-Z 2025',
+      label: '🤖 Agentiv KI',
       collapsed: false,
       items: [
-        {
-          type: 'category',
-          label: 'Willkommen zum Kurs',
-          items: [
-            'ai-module/willkommen/kurs-uebersicht',
-            'ai-module/willkommen/was-ist-ai',
-            'ai-module/willkommen/kurs-aufbau',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Agentic AI',
-          items: [
-            'ai-module/agentic-ai/einfuehrung-agents',
-            // Weitere Lektionen werden hinzugefügt, sobald sie erstellt sind
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Fundamentals of Reinforcement Learning',
-          items: [
-            'ai-module/reinforcement-learning/grundlagen-rl',
-            // Weitere Lektionen werden hinzugefügt, sobald sie erstellt sind
-          ],
-        },
-        // Machine Learning und NLP Module werden aktiviert, sobald Inhalte erstellt sind
+        'agentiv-ki/einfuehrung',
+        'agentiv-ki/intelligent-agents',
+        'agentiv-ki/multi-agent-systems',
       ],
     },
-    // Weitere Kapitel werden hinzugefügt, sobald Inhalte verfügbar sind
+    {
+      type: 'category',
+      label: '🧠 Fundamentals of Reinforcement Learning',
+      collapsed: false,
+      items: [
+        'reinforcement-learning/grundlagen',
+        'reinforcement-learning/markov-decision-process',
+        'reinforcement-learning/policy-gradient',
+      ],
+    },
+    {
+      type: 'category',
+      label: '🎯 Q-Learning Intuition',
+      collapsed: false,
+      items: [
+        'q-learning/intuition',
+        'q-learning/implementation',
+        'q-learning/advanced-techniques',
+      ],
+    },
+    {
+      type: 'category',
+      label: '🔥 Praktische Projekte',
+      collapsed: false,
+      items: [
+        'projekte/ki-chatbot-projekt',
+        'projekte/reinforcement-learning-game',
+        'projekte/abschlussprojekt',
+      ],
+    },
   ],
 };
 
